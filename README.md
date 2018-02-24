@@ -1,4 +1,4 @@
-# vue-element-admin #
+# vue007-admin-web #
 
 [![vue](https://img.shields.io/badge/vue-2.4.2-brightgreen.svg)](https://github.com/vuejs/vue)
 [![element-ui](https://img.shields.io/badge/element--ui-1.4.2-brightgreen.svg)](https://github.com/ElemeFE/element)
@@ -14,15 +14,13 @@
 ## 功能
 - 登录/注销
 - 面包屑
-- echarts图表
+- 导航
 - 401，404错误页面
 - 错误日志
 - 多环境发布
 - dashboard
 - 二次登录
 - 动态侧边栏（支持多级路由）
-- mock数据
-- cache tabs example
 - screenfull
 - views-tab
 
@@ -59,7 +57,6 @@
 │   ├── components             // 全局公用组件
 │   ├── directive              // 全局指令
 │   ├── filtres                // 全局filter
-│   ├── mock                   // mock数据
 │   ├── router                 // 路由
 │   ├── store                  // 全局store管理
 │   ├── styles                 // 全局样式
@@ -67,8 +64,8 @@
 │   ├── view                   // view
 │   ├── App.vue                // 入口页面
 │   └── main.js                // 入口 加载组件 初始化等
-├── static                     // 第三方不打包资源
-├── .babelrc                   // babel-loader 配置
+├── static                     // 静态资源
+├── .babelrc                   // babel-loader 配置
 ├── eslintrc.js                // eslint 配置项
 ├── .gitignore                 // git 忽略项
 ├── favicon.ico                // favicon图标
