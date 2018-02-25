@@ -10,6 +10,7 @@ var dir = distDir.apiProject;
 module.exports = {
     build: {
         sitEnv: require('./sit.env'),
+        testEnv: require('./test.env'),
         prodEnv: require('./prod.env'),
         index: path.resolve(__dirname, dir + 'index.html'),
         assetsRoot: path.resolve(__dirname, dir),
