@@ -1,4 +1,4 @@
-(https://avatars1.githubusercontent.com/u/34916802?s=200&raw=true)
+![](https://avatars1.githubusercontent.com/u/34916802?s=200&raw=true)
 # vue007-admin-web #
 [![vue](https://img.shields.io/badge/vue-2.5.13-brightgreen.svg)](https://github.com/vuejs/vue)
 [![vuex](https://img.shields.io/badge/vuex-3.0.0-brightgreen.svg)](https://github.com/vuejs/vuex)
