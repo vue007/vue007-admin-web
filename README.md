@@ -2,7 +2,7 @@
 
 [![vue](https://img.shields.io/badge/vue-2.5.13-brightgreen.svg)](https://github.com/vuejs/vue)
 [![vuex](https://img.shields.io/badge/vuex-3.0.0-brightgreen.svg)](https://github.com/vuejs/vuex)
-[![vue-router](https://img.shields.io/badge/vue-router-2.7.0-brightgreen.svg)](https://github.com/vuejs/vue-router)
+[![vue-router](https://img.shields.io/badge/vue-router2.7.0-brightgreen.svg)](https://github.com/vuejs/vue-router)
 [![element-ui](https://img.shields.io/badge/element--ui-2.0.11-brightgreen.svg)](https://github.com/ElemeFE/element)
 
 
