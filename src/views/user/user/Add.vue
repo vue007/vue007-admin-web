@@ -5,11 +5,11 @@
                 <el-input v-model="form.nickname" auto-complete="off"></el-input>
             </el-form-item>
             <el-form-item label="头像" :label-width="formLabelWidth" prop="file">
-                <ImageUpload
-                    :imageUrl="form.headImg"
-                    :sourceType="$global.uploadSourceType.HEAD_IMAGE"
-                    @success="uploadSuccess">
-                </ImageUpload>
+                <!--<ImageUpload-->
+                    <!--:imageUrl="form.headImg"-->
+                    <!--:sourceType="$global.uploadSourceType.HEAD_IMAGE"-->
+                    <!--@success="uploadSuccess">-->
+                <!--</ImageUpload>-->
                 <div class="el-upload__tip">
                     头像大小不能超过 <span style="font-weight: bold">2M</span>，只支持 <span
                     style="font-weight: bold">jpg、png、gif</span> 格式。
@@ -29,10 +29,10 @@
     const {mapState, mapActions} = createNamespacedHelpers('user/user');
 
     import { OperButton } from '@/components'
-    import ImageUpload from '@/views/file/upload/helper/ImageUpload'
+//    import ImageUpload from '@/views/file/upload/helper/ImageUpload'
 
     export default {
-        components: {OperButton, ImageUpload},
+        components: { OperButton },
         data() {
             return {
                 formLabelWidth: '60px',

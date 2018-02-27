@@ -45,16 +45,13 @@
     import ErrorLog from 'components/common/ErrLog'
     import errLogStore from 'store/errLog'
 
-    import UploadTool from 'views/file/upload/helper/NavTool'
-
     export default {
         components: {
             Levelbar,
             TabsView,
             Hamburger,
             ErrorLog,
-            Screenfull,
-            UploadTool
+            Screenfull
         },
         data() {
             return {

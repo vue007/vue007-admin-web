@@ -30,10 +30,10 @@
     const {mapState, mapActions} = createNamespacedHelpers('user/user');
 
     import { OperButton } from '@/components'
-    import ImageUpload from '@/views/file/upload/helper/ImageUpload'
+//    import ImageUpload from '@/views/file/upload/helper/ImageUpload'
 
     export default {
-        components: {OperButton, ImageUpload},
+        components: {OperButton},
         data() {
             return {
                 imgUrl: '',

@@ -3,7 +3,7 @@
         <el-form class="card-box login-form" autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm"
                  label-position="left">
             <h3 class="title text-3d">
-                <span>zed-3d-bbs 后台管理系统</span>
+                <span>vue007 admin</span>
             </h3>
 
             <el-form-item prop="username">
