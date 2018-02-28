@@ -43,7 +43,7 @@
 ## 发布
 ```bash
     # 发布测试环境 带webpack ananalyzer
-    npm run build:sit-preview
+    npm run build:test
 
     # 构建生成环境
     npm run build:prod
