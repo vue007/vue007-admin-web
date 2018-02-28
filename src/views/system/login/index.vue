@@ -6,7 +6,7 @@
                 <span>vue007 admin</span>
             </h3>
 
-            <el-form-item prop="username">
+            <el-form-item prop="username" >
                 <span class="svg-container svg-container_login">
                   <icon name="user" scale="0.8"></icon>
                 </span>
@@ -27,17 +27,7 @@
                        @click.native.prevent="handleLogin">登 录
             </el-button>
 
-            <!--<div class='tips'>账号:admin 密码随便填</div>-->
-            <!--<div class='tips'>账号:editor  密码随便填</div>-->
-
-            <!--<el-button class='thirdparty-button' type="primary" @click='showDialog=true'>打开第三方登录</el-button>-->
         </el-form>
-
-        <!--<el-dialog title="第三方验证" :visible.sync="showDialog">-->
-        <!--本地不能模拟，请结合自己业务进行模拟！！！<br/><br/><br/>-->
-        <!--邮箱登录成功,请选择第三方验证<br/>-->
-        <!--<social-sign />-->
-        <!--</el-dialog>-->
 
     </div>
 </template>
@@ -100,31 +90,9 @@
                         return false
                     }
                 })
-            },
-            afterQRScan() {
-                // const hash = window.location.hash.slice(1)
-                // const hashObj = getQueryObject(hash)
-                // const originUrl = window.location.origin
-                // history.replaceState({}, '', originUrl)
-                // const codeMap = {
-                //   wechat: 'code',
-                //   tencent: 'code'
-                // }
-                // const codeName = hashObj[codeMap[this.auth_type]]
-                // if (!codeName) {
-                //   alert('第三方登录失败')
-                // } else {
-                //   this.$store.dispatch('LoginByThirdparty', codeName).then(() => {
-                //     this.$router.push({ path: '/' })
-                //   })
-                // }
             }
         },
         created() {
-            // window.addEventListener('hashchange', this.afterQRScan)
-        },
-        destroyed() {
-            // window.removeEventListener('hashchange', this.afterQRScan)
         }
     }
 </script>
@@ -149,9 +117,9 @@
             border: 0px;
             -webkit-appearance: none;
             border-radius: 0px;
-            padding: 12px 5px 12px 15px;
+            padding: 10px 5px 12px 15px;
             color: $light_gray;
-            height: 45px;
+            height: 40px;
         }
         .el-input {
             display: inline-block;
@@ -159,8 +127,10 @@
             width: 85%;
         }
         .el-button {
+            height: 40px;
             background-color: #58B2DC;
             border-color: #58B2DC;
+            font-size: 14px;
         }
         .tips {
             font-size: 14px;
@@ -168,7 +138,7 @@
             margin-bottom: 10px;
         }
         .svg-container {
-            padding: 6px 5px 6px 15px;
+            padding: 2px 5px 6px 15px;
             color: $dark_gray;
             vertical-align: middle;
             width: 30px;
@@ -184,7 +154,7 @@
             font-size: 48px;
             font-weight: 400;
             color: $light_gray;
-            margin: 0px auto 100px auto;
+            margin: 0px auto 60px auto;
             text-align: center;
             font-weight: bold;
         }
@@ -197,6 +167,8 @@
             margin: 12% auto;
         }
         .el-form-item {
+            height: 46px;
+            margin-bottom: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             background: rgba(0, 0, 0, 0.1);
             border-radius: 5px;
@@ -205,7 +177,7 @@
         .show-pwd {
             position: absolute;
             right: 10px;
-            top: 7px;
+            top: 4px;
             font-size: 16px;
             color: $dark_gray;
             cursor: pointer;

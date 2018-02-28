@@ -7,8 +7,6 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
-const os = require('os');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -31,18 +29,6 @@ module.exports = merge(baseWebpackConfig, {
     plugins: [
         new webpack.DefinePlugin({
             'process.env': config.dev.env
-        }),
-        new UglifyJsPlugin({
-            uglifyOptions: {
-                ie8: false,
-                ecma: 8,
-                mangle: true,
-                output: {comments: false},
-                compress: {warnings: false}
-            },
-            sourceMap: false,
-            cache: true,
-            parallel: os.cpus().length * 2
         }),
         // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
         new webpack.HotModuleReplacementPlugin(),

@@ -3,7 +3,7 @@
  */
 
 export function isvalidUsername(str) {
-    const regex = /^[0-9a-zA-Z]*$/g
+    const regex = /^[a-zA-Z0-9_-]{3,16}$/g
     return regex.test(str)
 }
 
