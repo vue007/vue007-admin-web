@@ -3,7 +3,7 @@ var path = require('path')
 
 var distDir = {
     local: '../dist/',
-    apiProject: '../../zed-bbs-admin-api/src/main/resources/ui/'
+    apiProject: '../../vue007-admin-api/src/main/resources/public/'
 }
 var dir = distDir.apiProject;
 
