@@ -1,5 +1,5 @@
 <template>
-    <el-breadcrumb class="app-levelbar" separator="/">
+    <el-breadcrumb :class="'app-levelbar'"  separator="/">
         <el-breadcrumb-item v-for="(item,index)  in levelList" :key="item.path">
             <span v-if='item.redirect==="noredirect"||index==levelList.length-1'
                   class="no-redirect">{{item.name}}</span>
@@ -11,7 +11,7 @@
 <script>
     export default {
         created() {
-            this.getBreadcrumb()
+            this.getBreadcrumb();
         },
         data() {
             return {
@@ -20,12 +20,12 @@
         },
         methods: {
             getBreadcrumb() {
-                let matched = this.$route.matched.filter(item => item.name)
-                const first = matched[0]
+                let matched = this.$route.matched.filter(item => item.name);
+                const first = matched[0];
                 if (first && (first.name !== '首页' || first.path !== '')) {
-                    matched = [{name: '首页', path: '/'}].concat(matched)
+                    matched = [{name: '首页', path: '/'}].concat(matched);
                 }
-                this.levelList = matched
+                this.levelList = matched;
             }
         },
         watch: {
@@ -44,8 +44,17 @@
         margin-left: 5px;
         margin-top: 8px;
         .no-redirect {
-            color: #97a8be;
+            color: #ffffff;
             cursor: text;
+        }
+        .el-breadcrumb__inner a{
+            color: #ffffff;
+        }
+        .el-breadcrumb__separator {
+            color: #ffffff !important;
+        }
+        * span {
+            color: #ffffff !important;
         }
     }
 </style>

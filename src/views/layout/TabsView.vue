@@ -4,9 +4,9 @@
             <transition-group>
                 <div class="tabs-view inline-block" v-for="tag in tabList"
                      @click="linkTo({ path: tag.redirect||tag.path, query: tag.query, params: tag.params })"
-                     :key="tag.path"
-                     style="margin-left: 4px;">
-                    <el-tag size="mini" :closable="true" :type="isActive(tag.path)?'primary':''" style="padding: 0 2px; height: 17px; line-height: 17px;"
+                     :key="tag.path">
+                    <el-tag size="small" :closable="true" :type="isActive(tag.path)?'primary':''"
+                            style="padding: 0 4px; height: 24px; line-height: 22px; font-size: 14px;"
                             :class="isActive(tag.path)?'tab-tag-active':'tab-tag'" @close.stop='closeViewTabs(tag, $event)'>
                         {{tag.name}}
                     </el-tag>
@@ -91,33 +91,40 @@
         display: inline-block;
         vertical-align: top;
         width: 100%;
-        height: 22px;
+        height: 24px;
         line-height: 18px;
         padding-bottom: 2px;
         padding-right: 80px;
-        border-bottom: solid 1px #eef0f6;
+        border-bottom: solid 1px #fefefe;
         /*background-color: #eff1f6;*/
         background-color: #fefefe;
         .tabs-view {
             cursor: default;
-            margin-left: 10px;
+            margin-left: 2px;
         }
     }
 
     .tab-tag-active {
-        background-color: #6eb6e2;
-        border-color: #a0d0ee;
-        color: #fefefe;
+        /*background-color: #6eb6e2;*/
+        /*border-color: #a0d0ee;*/
+        /*color: #fefefe;*/
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+        color: #8594ad;
         border-radius: 1px;
     }
 
     .tab-tag {
+        /*background-color: #fefefe;*/
+        /*border-color: #eef0f6;*/
+        /*color: #a1b1c4;*/
         background-color: #fefefe;
         border-color: #eef0f6;
-        color: #a1b1c4;
+        color: #b3c3d6;
         border-radius: 1px;
         &:hover{
-            background-color: #f4f4f4;
+            /*background-color: #f4f4f4;*/
+            background-color: #fafafa;
         }
     }
 

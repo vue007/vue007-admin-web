@@ -4,7 +4,7 @@
         <levelbar></levelbar>
         <error-log v-if="log.length>0" class="errLog-container" :logsList="log"></error-log>
 
-        <el-dropdown class="avatar-container" size="small" trigger="click">
+        <el-dropdown class="avatar-container" size="medium" trigger="click">
             <div class="avatar-wrapper">
                 <img class="user-avatar" :src="avatar+'?imageView2/1/w/80/h/80'">
             </div>
@@ -32,7 +32,9 @@
                 <!--slot="reference"-->
                 <!--class="upload-tool" type="circle" :percentage="25" :stroke-width="2" :width="28"></el-progress>-->
         <!--</el-popover>-->
+        <!--<tabs-view></tabs-view>-->
     </el-menu>
+
 </template>
 
 <script>
@@ -80,11 +82,23 @@
 
 <style rel="stylesheet/scss" lang="scss" scoped>
     .navbar {
-        height: 34px;
+        height: 36px;
         line-height: 34px;
         border-radius: 0px !important;
         border-bottom-width:0px;
+        background: -webkit-linear-gradient(left top, #5ca7d6, #add3eb); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(bottom right, #5ca7d6, #add3eb); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(bottom right, #5ca7d6, #add3eb); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #5ca7d6, #add3eb);
+
+        /*background: -webkit-linear-gradient(#5ca7d6, #add3eb); !* Safari 5.1 - 6.0 *!*/
+        /*background: -o-linear-gradient(#5ca7d6, #add3eb); !* Opera 11.1 - 12.0 *!*/
+        /*background: -moz-linear-gradient(#5ca7d6, #add3eb); !* Firefox 3.6 - 15 *!*/
+        /*background: linear-gradient(#5ca7d6, #add3eb); !* 标准的语法 *!*/
+        /*background-color: #5ca7d6;*/
         .hamburger-container {
+            position: relative;
+            top: -3px;
             line-height: 43px;
             height: 30px;
             float: left;
@@ -113,11 +127,12 @@
             right: 35px;
             .avatar-wrapper {
                 cursor: pointer;
-                margin-top: 5px;
+                margin-top: 8px;
                 position: relative;
                 .user-avatar {
                     width: 42px;
                     height: 42px;
+                    border: solid 1px #f2f2f2;
                     border-radius: 42px;
                 }
                 .el-icon-caret-bottom {

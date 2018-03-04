@@ -50,10 +50,10 @@
     }
 
     #myicon {
-        color: #e1e1e1;
+        color: #6da8e3;
     }
 
     #myicon:hover {
-        color: #666;
+        color: #fefefe;
     }
 </style>

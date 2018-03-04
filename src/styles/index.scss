@@ -10,6 +10,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
 label {
@@ -102,7 +103,24 @@ code {
 
 
 .container {
-    padding: 10px 20px 20px 20px;
+    margin: 20px 15px 15px 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.panel-box {
+    .panel-header{
+        margin: 15px 15px 0px 15px;
+        padding: 5px 15px 5px 15px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+    .panel-content {
+        margin: 5px 15px 15px 15px;
+        padding: 5px 15px 80px 15px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
 }
 
 //main-container全局样式
@@ -225,7 +243,7 @@ code {
     }
 }
 
-.header-container {
+.panel-header {
     .search-item {
         display: inline-block;
         vertical-align: middle;
@@ -234,7 +252,7 @@ code {
         }
     }
     .el-form-item {
-        margin-bottom: 10px !important;
+        margin-bottom: 0px !important;
         margin-right: 5px !important;
     }
 }
