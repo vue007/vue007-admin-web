@@ -38,7 +38,7 @@
                 <el-table-column prop="nickname" label="昵称" width="200"></el-table-column>
                 <el-table-column prop="headImg" label="头像" width="150">
                     <template slot-scope="scope">
-                        <img style="width: 20px;height: 20px;border-radius: 50%" v-bind:src="scope.row.headImg" v-bind:alt="scope.row.nickname">
+                        <img style="width: 20px;height: 20px;border-radius: 50%" src="https://avatars1.githubusercontent.com/u/34916802?s=200&raw=true" v-bind:alt="scope.row.nickname">
                     </template>
                 </el-table-column>
                 <el-table-column prop="userType" label="用户类型" with="150">

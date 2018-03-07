@@ -5,12 +5,28 @@
 @import './element-ui.scss';
 @import './sidebar.scss';
 
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 label {

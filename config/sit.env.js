@@ -1,7 +1,7 @@
 module.exports = {
     NODE_ENV: '"production"',
     ENV_CONFIG: '"sit"',
-    BASE_API: '"http://47.52.58.16:8686"',
-    PREVIEW_URL: '"http://47.52.58.16:8686"',
-    APP_ORIGIN: '"http://47.52.58.16:8686"'
+    BASE_API: '"http://admin.vue007.tech"',
+    PREVIEW_URL: '"http://admin.vue007.tech"',
+    APP_ORIGIN: '"http://admin.vue007.tech"'
 };

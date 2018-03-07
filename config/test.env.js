@@ -1,6 +1,7 @@
 module.exports = {
     NODE_ENV: '"production"',
     ENV_CONFIG: '"test"',
-    BASE_API: '"http://127.0.0.1:8686"',
-    APP_ORIGIN: '"http://127.0.0.1:8686"'
+    BASE_API: '"http://admin.vue007.tech"',
+    PREVIEW_URL: '"http://admin.vue007.tech"',
+    APP_ORIGIN: '"http://admin.vue007.tech"'
 };
