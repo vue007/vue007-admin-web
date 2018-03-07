@@ -155,7 +155,7 @@
                 position: relative;
                 top: 40%;
                 transform: translateY(-40%);
-                width: 90%;
+                width: 80%;
                 margin: 0 auto;
 
                 input button{
