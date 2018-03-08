@@ -8,39 +8,48 @@
         </el-col>
         <el-col :sm="9" :xs="24"
                 class="login-box ">
+            <el-container style="height: 100%;">
+                <!--<el-header>Header</el-header>-->
+                <el-main>
+                    <div class="login-form" >
+                        <h3 class="title text-3d">
+                            <span>vue007 admin</span>
+                        </h3>
+                        <el-form class="" autoComplete="on" :model="loginForm" :rules="loginRules"
+                                 ref="loginForm"
+                                 label-position="left">
+                            <el-form-item prop="username">
+                                <el-input name="username" type="text" v-model="loginForm.username" autoComplete="on" placeholder="帐号">
+                                    <icon slot="prefix" name="user" scale="1.2"></icon>
+                                </el-input>
+                            </el-form-item>
 
-            <div class="login-form" >
-                <h3 class="title text-3d">
-                    <span>vue007 admin</span>
-                </h3>
-                <el-form class="" autoComplete="on" :model="loginForm" :rules="loginRules"
-                         ref="loginForm"
-                         label-position="left">
-                    <el-form-item prop="username">
-                        <el-input name="username" type="text" v-model="loginForm.username" autoComplete="on" placeholder="帐号">
-                            <icon slot="prefix" name="user" scale="1.2"></icon>
-                        </el-input>
-                    </el-form-item>
-
-                    <el-form-item prop="password">
-                        <el-input name="password" :type="pwdType" @keyup.enter.native="handleLogin"
-                                  v-model="loginForm.password"
-                                  autoComplete="on"
-                                  placeholder="密码">
-                            <icon slot="prefix" name="lock" scale="1.2"></icon>
-                            <span slot="suffix" @click='showPwd' >
+                            <el-form-item prop="password">
+                                <el-input name="password" :type="pwdType" @keyup.enter.native="handleLogin"
+                                          v-model="loginForm.password"
+                                          autoComplete="on"
+                                          placeholder="密码">
+                                    <icon slot="prefix" name="lock" scale="1.2"></icon>
+                                    <span slot="suffix" @click='showPwd' >
                                 <icon :name="pwdType ? 'eye' : 'eye-open'" scale="1.2"></icon>
                             </span>
-                        </el-input>
-                    </el-form-item>
+                                </el-input>
+                            </el-form-item>
 
-                    <el-button type="primary" class="login-btn" :loading="loading" style="width: 100%;"
-                               @click.native.prevent="handleLogin">登 录
-                    </el-button>
+                            <el-button type="primary" class="login-btn" :loading="loading" style="width: 100%;"
+                                       @click.native.prevent="handleLogin">登 录
+                            </el-button>
 
-                </el-form>
-            </div>
-
+                        </el-form>
+                    </div>
+                </el-main>
+                <el-footer class="login-form-footer">
+                    <a href="https://github.com/vue007/vue007-admin-web" target="_blank">
+                        <icon name="github" scale="1.5"></icon>
+                        <span class="footer-text">vue007-admin-web</span>
+                    </a>
+                </el-footer>
+            </el-container>
         </el-col>
     </el-row>
 </template>
@@ -150,12 +159,13 @@
         .login-box {
             height: 100%;
             background-color: #ffffff;
+            box-shadow: -5px 0px 50px rgba(0, 0, 0, .6);
 
             .login-form{
                 position: relative;
                 top: 40%;
                 transform: translateY(-40%);
-                width: 80%;
+                width: 95%;
                 margin: 0 auto;
 
                 input button{
@@ -168,7 +178,17 @@
                     color: #51A8DD;
                     text-align: center;
                 }
+            }
 
+            .login-form-footer{
+                text-align: center;
+                font-size:14px;
+                color: #666;
+                .footer-text {
+                    position: relative;
+                    top: -3px;
+                    font-size: 12px;
+                }
             }
         }
     }
