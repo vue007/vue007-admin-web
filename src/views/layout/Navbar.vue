@@ -14,25 +14,11 @@
                         首页
                     </el-dropdown-item>
                 </router-link>
-                <el-dropdown-item divided><span @click="logout" style="display:block;">退出登录</span></el-dropdown-item>
+                <el-dropdown-item><span @click="logout" style="display:block;">退出登录</span></el-dropdown-item>
             </el-dropdown-menu>
         </el-dropdown>
         <Screenfull class="screenfull"></Screenfull>
         <UploadTool class="upload-tool"></UploadTool>
-        <!--<el-popover-->
-            <!--placement="bottom-start"-->
-            <!--:width="200"-->
-            <!--trigger="hover">-->
-            <!--<el-progress :percentage="70"></el-progress>-->
-            <!--<el-progress :percentage="70"></el-progress>-->
-            <!--<el-progress :percentage="70"></el-progress>-->
-            <!--<el-progress :percentage="70"></el-progress>-->
-            <!--<el-progress :percentage="70"></el-progress>-->
-            <!--<el-progress-->
-                <!--slot="reference"-->
-                <!--class="upload-tool" type="circle" :percentage="25" :stroke-width="2" :width="28"></el-progress>-->
-        <!--</el-popover>-->
-        <!--<tabs-view></tabs-view>-->
     </el-menu>
 
 </template>

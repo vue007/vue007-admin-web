@@ -6,7 +6,7 @@
                      @click="linkTo({ path: tag.redirect||tag.path, query: tag.query, params: tag.params })"
                      :key="tag.path">
                     <el-tag size="small" :closable="true" :type="isActive(tag.path)?'primary':''"
-                            style="padding: 0 4px; height: 24px; line-height: 22px; font-size: 14px;"
+                            style="padding: 0 4px; height: 24px; line-height: 22px; font-size: 12px;"
                             :class="isActive(tag.path)?'tab-tag-active':'tab-tag'" @close.stop='closeViewTabs(tag, $event)'>
                         {{tag.name}}
                     </el-tag>
